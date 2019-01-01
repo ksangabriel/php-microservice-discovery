@@ -2,19 +2,13 @@
 
 use Illuminate\Http\Request;
 
-Route::post('/register', function(Request $request) {
-    return 'Test';
+/**
+ * Version 1 
+ */
+Route::prefix('v1')->group(function () {
+    Route::post('register', 'API\DiscoveryController@register');
+    Route::post('unregister', 'API\DiscoveryController@unregister');
+    Route::get('services', 'API\DiscoveryController@index');
 });
-
-Route::post('/deregister', function(Request $request) {
-    return 'Test';
-});
-
-
-Route::get('/services', function(Request $request) {
-    return 'Test';
-});
-
-
 
 
