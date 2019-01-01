@@ -1,4 +1,4 @@
-<p align="center">Turreta Service Discovery for Microservices</p>
+## Turreta Service Discovery for Microservices</p>
 
 ## About Service Discovery
 
