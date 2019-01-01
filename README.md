@@ -2,7 +2,9 @@
 
 ## About Service Discovery
 
-Turreta Service Discovery is a Laravel-based web application that provides a registry of services that each client application that register and lookup other services. 
+Turreta Service Discovery is a Laravel-based web application that provides a registry of services where each client application register and lookup other services.
+
+The registry of availale services are kept up-to-date by probing each registered service via callback URL. If a service does not response as expected, that service is marked as "down" and is ignored from the list of available services.
 
 ## Learning Service Discovery
 
